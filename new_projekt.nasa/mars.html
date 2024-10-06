@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System - Mars</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background for the entire page */
+        }
+        #solar-system {
+            width: 50%;
+            background-color: black; /* Black background for the 3D scene */
+        }
+        #info-panel {
+            width: 40%; /* Slightly reduced width of the info panel */
+            padding: 30px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            background-color: #142850; /* Dark blue background for the info panel */
+            border-radius: 25px; /* Rounded corners */
+            margin: 20px auto; /* Center the block and add outer margin */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the block */
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+        a {
+            color: #007bff; /* Blue color for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="solar-system"></div>
+    <div id="info-panel">
+        <h1>Mars</h1>
+        <p>Mars is the fourth planet from the Sun and is often referred to as the "Red Planet" due to its reddish appearance caused by iron oxide on its surface.</p>
+        <p>The planet has the largest volcano in the solar system, Olympus Mons, which is about 13.6 miles (22 km) high. Mars also has a thin atmosphere, composed mostly of carbon dioxide.</p>
+        <p>Evidence suggests that liquid water once flowed on Mars, and there are ongoing missions to explore the planet for signs of past life.</p>
+        <p>To learn more about Mars, visit <a href="https://en.wikipedia.org/wiki/Mars" target="_blank">Wikipedia</a>.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="mars.js"></script>
+</body>
+</html>

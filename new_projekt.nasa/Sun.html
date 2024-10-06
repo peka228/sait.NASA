@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System - Sun</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background for the entire page */
+        }
+        #solar-system {
+            width: 50%;
+            background-color: black; /* Black background for the 3D scene */
+        }
+        #info-panel {
+            width: 40%; /* Slightly reduced width of the info panel */
+            padding: 30px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            background-color: #142850; /* Dark blue background for the info panel */
+            border-radius: 25px; /* Rounded corners */
+            margin: 20px auto; /* Center the block and add outer margin */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the block */
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+        a {
+            color: #007bff; /* Blue color for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="solar-system"></div>
+    <div id="info-panel">
+        <h1>The Sun</h1>
+        <p>The Sun is a star at the center of the Solar System, around which planets, asteroids, comets, and other celestial bodies orbit. It is the primary source of light and heat for Earth.</p>
+        <p>The Sun is composed mainly of hydrogen (about 74%) and helium (about 24%), with trace amounts of heavier elements such as oxygen, carbon, neon, and iron.</p>
+        <p>The surface temperature of the Sun is approximately 5,500°C, while its core reaches temperatures of about 15 million degrees Celsius.</p>
+        <p>Learn more about the Sun on <a href="https://en.wikipedia.org/wiki/Sun" target="_blank">Wikipedia</a>.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="sun.js"></script>
+</body>
+</html>
